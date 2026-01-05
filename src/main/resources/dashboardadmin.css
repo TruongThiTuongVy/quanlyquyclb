@@ -1,0 +1,65 @@
+/* 1. Cấu hình chung */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-border-color: transparent #E0E0E0 transparent transparent;
+}
+.logo-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7C7FE8;
+}
+
+.logo-subtitle {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #999999;
+}
+
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-padding: 12 20;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #F0F2F5;
+    -fx-background-radius: 10;
+}
+
+.menu-button-active {
+    -fx-background-color: #9DA3F5;
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(157, 163, 245, 0.4), 5, 0, 0, 3);
+}
+
+.main-content-area {
+    -fx-background-color: #AAB2F5;
+}
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 2);
+    -fx-padding: 20;
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.card-value {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}

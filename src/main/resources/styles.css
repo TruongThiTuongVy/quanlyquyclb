@@ -1,0 +1,53 @@
+
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+.left-pane {
+    -fx-background-color: linear-gradient(to bottom right, #a1c4fd, #667eea, #764ba2);
+}
+.logo-text { -fx-font-size: 80px; -fx-font-weight: bold; -fx-text-fill: white; }
+.club-name { -fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: white; }
+.slogan-text { -fx-font-size: 14px; -fx-text-fill: white; -fx-font-style: italic; }
+
+.right-pane { -fx-background-color: white; }
+.welcome-label { -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #667eea; }
+
+.select-button-signin, .select-button-signup {
+    -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 12 40; -fx-background-radius: 25;
+    -fx-cursor: hand; -fx-transition: all 0.3s ease; -fx-border-radius: 30;
+}
+.select-button-signin { -fx-background-color: #667eea; -fx-text-fill: white; }
+.select-button-signup { -fx-background-color: white; -fx-border-color: #667eea; -fx-text-fill: #667eea; }
+
+.select-button-signin:hover, .select-button-signup:hover {
+    -fx-scale-x: 1.05; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.form-title { -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333; }
+.form-subtitle { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #667eea; }
+
+.input-field {
+    -fx-font-size: 14px; -fx-background-radius: 20; -fx-border-radius: 20;
+    -fx-border-color: #ddd; -fx-padding: 10 15; -fx-pref-width: 320;
+}
+.input-field:focused { -fx-border-color: #667eea; -fx-background-color: #fbfbff; }
+
+.role-label { -fx-font-size: 13px; -fx-text-fill: #777; }
+.role-button {
+    -fx-background-color: #f9f9f9; -fx-border-color: #eee;
+    -fx-border-radius: 10; -fx-background-radius: 10; -fx-cursor: hand;
+}
+.role-button:hover {
+    -fx-border-color: #667eea; -fx-background-color: #f0f2ff;
+}
+
+.primary-button {
+    -fx-background-color: #667eea; -fx-text-fill: white;
+    -fx-font-size: 15px; -fx-font-weight: bold; -fx-padding: 12;
+    -fx-background-radius: 25; -fx-pref-width: 320; -fx-cursor: hand;
+}
+.primary-button:hover {
+    -fx-background-color: #5566c2; -fx-translate-y: -2;
+}
+
+.hyperlink { -fx-text-fill: #667eea; -fx-font-size: 13px; -fx-underline: false; }

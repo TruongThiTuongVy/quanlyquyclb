@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UsersController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="350.0" styleClass="left-pane" stylesheets="@../styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="86.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;VIC&gt;">
+                    <font>
+                        <Font name="System Bold" size="55.0" />
+                    </font>
+                </Text>
+                <Text fill="#a2dbf2" layoutX="55.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VKU IT CLUB">
+                    <font>
+                        <Font name="Verdana Bold" size="36.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="63.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* We dream it. We make it. *">
+                    <font>
+                        <Font name="System Italic" size="18.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" layoutX="50.0" layoutY="40.0" prefHeight="420.0" prefWidth="350.0" spacing="15.0">
+                    <children>
+                        <Label text="WELCOME TO" textFill="#555555">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label text="FUNDS MANAGEMENT VIC" textFill="#333333">
+                            <font>
+                                <Font name="System Bold" size="22.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Sign in to VIC" textFill="#5b56d6">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <TextField fx:id="txtEmail" prefHeight="45.0" promptText="Email" styleClass="input-field" stylesheets="@../styles.css" />
+
+                        <PasswordField fx:id="txtPassword" prefHeight="45.0" promptText="Password" styleClass="input-field" stylesheets="@../styles.css" />
+
+                        <Label text="Select Your Role" textFill="#777777" />
+                        <HBox alignment="CENTER" spacing="20.0">
+                            <children>
+                                <RadioButton mnemonicParsing="false" selected="true" text="Member">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="roleGroup" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton mnemonicParsing="false" text="Admin" toggleGroup="$roleGroup" />
+                            </children>
+                        </HBox>
+
+                        <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="45.0" prefWidth="200.0" styleClass="login-btn" stylesheets="@../styles.css" text="Sign in" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Button>
+
+                        <Hyperlink text="Forgot your password?" textFill="#5b56d6" />
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
